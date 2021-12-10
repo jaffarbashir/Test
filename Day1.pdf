@@ -1,0 +1,53 @@
+import java.util.*;
+public class Day1
+{
+	public static void main(String [] args)
+	
+	{   
+		String Con;
+		do
+		{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int num1 = sc.nextInt();
+		System.out.println("Enter another number: ");
+		int num2 = sc.nextInt();
+		System.out.println("Enter the operation: ");
+		String sym = sc.next();
+		int result;
+		
+			switch (sym)
+			{
+			case "+":
+				result = num1+num2;
+				System.out.println("Addition of two numbers is: "+result);
+				break;
+			case "-":
+				result = num1-num2;
+				System.out.println("Addition of two numbers is: "+result);
+				break;
+			case "*":
+				result = num1*num2;
+				System.out.println("Addition of two numbers is: "+result);
+				break;
+			case "/":
+				result = num1/num2;
+				System.out.println("Addition of two numbers is: "+result);
+				break;
+			case "%":
+				result = num1%num2;
+				System.out.println("Addition of two numbers is: "+result);
+				break;
+			default:
+				System.out.println("Enter a valid operation");
+				break;
+				
+			}
+			System.out.println("Do you want to continue?? Press Y for yes and N for no");	
+			Con = sc.next();
+		}
+		
+		
+		while(Con == "Y");
+	}
+}
